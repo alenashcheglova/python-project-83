@@ -4,7 +4,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 make install
 
-if [ -z "$DATABASE_URL" ]; then
+if [[ -z "$DATABASE_URL" ]]; then
   echo "ERROR: DATABASE_URL is not available during build!"
   exit 1
 fi
