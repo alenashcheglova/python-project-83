@@ -149,6 +149,10 @@ def checks_post(id):
             )
             url = cur.fetchone()
 
+    if not url:
+        flash("Сайт не найден", "danger")
+        return redirect(url_for("index"))
+
     try:
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
         response = requests.get(url["name"], headers=headers, timeout=10)
