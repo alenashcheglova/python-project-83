@@ -7,3 +7,6 @@ https://python-project-83-uztx.onrender.com
 
 ## First page
 https://python-project-83-uztx.onrender.com
+
+## Finall project
+https://python-project-83-uztx.onrender.com/
